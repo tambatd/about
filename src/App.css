@@ -1,0 +1,24 @@
+html{background-color: #008282;
+color: #f1f1f1;
+letter-spacing: 1.5px;
+font-family: W95FA;
+ overflow-x: hidden;
+ overflow-y: hidden;
+ max-width: 1080px;
+ 
+}
+.Executables{  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 50px;
+}
+@font-face {
+font-family: W95FA;
+src: url("https://cdn.glitch.com/ab2515f5-46a5-4d6b-9757-b7f6f20cc638%2FW95FA.otf?v=1629837049242") format("opentype"),
+     url('https://cdn.glitch.com/ab2515f5-46a5-4d6b-9757-b7f6f20cc638%2FW95FA.otf?v=1629837049242')  format('truetype');
+}
+
+body { cursor: url('./cursor.cur'), auto; }
+button{cursor: url('./select.cur'), auto;}

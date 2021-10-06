@@ -1,0 +1,24 @@
+.exe {
+    padding-top: 20px;
+    height: 50px;
+    width: 100px;
+    margin: 0;
+    text-align: center;
+  }
+  .exe p {
+    margin: 0;
+    color: #EDF6F6;
+  }
+  
+  .exe::after{
+      padding-top: 20px;
+  }
+  
+  .icons{
+    height: 30px;
+    width: auto;
+  }
+  
+  .Application{
+    position: absolute;
+  }
