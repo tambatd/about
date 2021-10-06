@@ -1,10 +1,8 @@
 import "./exe.css";
 import Application from "../application/application";
+import { useState } from "react";
 
-
-const { useState } = require("react");
-
-const Exe = (props) => {
+const Exe = (props: any) => {
     const [active, setActive] = useState(false);
     return (
         <div id={props.id}>
