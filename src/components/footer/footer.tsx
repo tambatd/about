@@ -1,7 +1,7 @@
 import "./footer.css";
 import Clock from "../clock/clock"
 
-const Footer = (props) => {
+const Footer = (props: any) => {
   return(
     <div className="footer">
       <div>

@@ -16,9 +16,9 @@ font-family: W95FA;
 }
 @font-face {
 font-family: W95FA;
-src: url("https://cdn.glitch.com/ab2515f5-46a5-4d6b-9757-b7f6f20cc638%2FW95FA.otf?v=1629837049242") format("opentype"),
-     url('https://cdn.glitch.com/ab2515f5-46a5-4d6b-9757-b7f6f20cc638%2FW95FA.otf?v=1629837049242')  format('truetype');
+src: url("./components/assets/font.otf") format("opentype"),
+     url("./components/assets/font.otf")  format('truetype');
 }
 
-body { cursor: url('./cursor.cur'), auto; }
-button{cursor: url('./select.cur'), auto;}
+body{ cursor: url('./components/assets/arrow.cur'), auto; }
+button{cursor: url('./components/assets/select.cur'), auto;}

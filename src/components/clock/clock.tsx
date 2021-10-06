@@ -1,17 +1,15 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import './clock.css'
 
 const Clock = () => {
-    const timerID = useRef(null);
     const [date, setDate] = useState(new Date());
-
     const tick = () => {
         setDate(new Date());
     }
     useEffect(() => {
-        timerID.current = setInterval(() => tick(), 1000);
+       setInterval(() => tick(), 1000);
         return () => {
-            clearInterval(timerID);
+            clearInterval();
           }   
     }, []);
     return (

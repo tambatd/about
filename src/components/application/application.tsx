@@ -2,7 +2,7 @@ import './application.css'
 import Draggable from 'react-draggable';
 import { useState, useEffect } from 'react';
 
-const Application = (props) => {
+const Application = (props: any) => {
     const [active, setActive] = useState(props.status);
     useEffect(() => {
         setActive(props.status);
@@ -36,7 +36,7 @@ const Application = (props) => {
                                     <p > <h2 >Languages:</h2> Japanese, English, Marathi</p>
                                     <hr />
                                     <p >ETH Address: iotambat.eth</p>
-                                    <p>Contact me => <a href="mailto:devendra.tambat@outlook.com">📧</a></p>
+                                    <p>Contact me: <a href="mailto:devendra.tambat@outlook.com">📧</a></p>
                                 </div>
                             </div>
                         </div>
