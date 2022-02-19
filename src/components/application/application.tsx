@@ -13,12 +13,12 @@ const Application = (props: any) => {
                 <Draggable handle=".banner">
                     <div className="window">
                         <button className="CloseButton" onClick={() => setActive(false)}>
-                                <b>X</b>
-                            </button>
+                            <b>X</b>
+                        </button>
                         <div className="banner">
                             <div><p className="title">Welcome</p></div>
                         </div>
-                       
+
                         <div className="app">
                             <div className="content">
                                 <h1>Hi! I'm Devendra!</h1>
@@ -29,10 +29,10 @@ const Application = (props: any) => {
                                 <p>Using websites/GUIs should be fun. When someone uses something you made, they should smile</p>
                                 <hr />
                                 <div className="skills">
-                                    
+
                                     <p > <h2>Skills:</h2>JavaScript, TypeScript, React 🥰, React Native, Electron, Express, etc. </p>
                                     <hr />
-                                   
+
                                     <p > <h2 >Languages:</h2> Japanese, English, Marathi</p>
                                     <hr />
                                     <p >ETH Address: iotambat.eth</p>
