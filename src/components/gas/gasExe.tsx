@@ -3,7 +3,11 @@ import { useState } from "react";
 import icon from '../assets/gas.png'
 import Gas from "./gas";
 
-const GasExe = () => {
+const GasExe = (props: any) => {
+
+    const [info] = useState<any>()
+    
+    
     const [active, setActive] = useState(false);
     return (
         <div id="gas" >
@@ -12,7 +16,7 @@ const GasExe = () => {
                 <p>Gas</p>
             </div>
             {active &&
-            <Gas active={active}/>
+            <Gas active={active} info={info}/>
             }
         </div>
     );

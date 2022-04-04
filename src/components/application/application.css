@@ -1,6 +1,6 @@
 
 .window {
-    height: 520px;
+    height: 550px;
     width: 350px;
     background-color: #C1C0C1;
     border-top: #FFFFFF 3px solid;
@@ -10,7 +10,6 @@
   }
 
   button{
-  
     position: absolute;
     left: 93.5%;
     top: 3px;

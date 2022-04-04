@@ -4,18 +4,10 @@ import Draggable from "react-draggable";
 import loading from "../assets/loading.gif"
 const axios = require('axios');
 
-var config = {
-    method: 'get',
-    url: 'https://data-api.defipulse.com/api/v1/egs/api/ethgasAPI.json?api-key=059c6191089132834d3ccd4e49426a033322a076bfa435db5100137dc634',
-    headers: { 
-      'Cookie': 'AWSALB=ZqPLn+hy2JUWFuFBITGdA/iQkcW3WEW+1KanQzdcfrgjRw8BAR2ipfXBj+Sj2MKKToc9AwWq/k3hbyH/wCJaDtxeUioNvyk7yMu+6S4WzTRdLGbxxE4U1LZNpsnv; AWSALBCORS=ZqPLn+hy2JUWFuFBITGdA/iQkcW3WEW+1KanQzdcfrgjRw8BAR2ipfXBj+Sj2MKKToc9AwWq/k3hbyH/wCJaDtxeUioNvyk7yMu+6S4WzTRdLGbxxE4U1LZNpsnv'
-    }
-  };
-
 
 const Gas = (props: any) => {
 
-    useEffect(() => {
+    const getData = () => {
         const fetchData = async () => {
           const response = await axios(
             'https://data-api.defipulse.com/api/v1/egs/api/ethgasAPI.json?api-key=059c6191089132834d3ccd4e49426a033322a076bfa435db5100137dc634',
@@ -25,11 +17,15 @@ const Gas = (props: any) => {
         };
     
         fetchData();
-      }, []);
+      };
+      
+      useEffect(() => {
+        getData();
+      }, []); 
     
    
 
- const [info, setInfo] = useState<any>();
+ const [info, setInfo] = useState<any>(props.info);
   const [active, setActive] = useState(props.active);
   return(
     <div className="application">
@@ -53,7 +49,7 @@ const Gas = (props: any) => {
 <p>Slow: {info[2]/10} GWEI</p>   <br/> </div>  </div> : 
 
                         <div className="loadingGif">
-                            <img src={loading}></img>
+                            <img alt="loading_image" src={loading}></img>
                         </div> }
         </div>
         </Draggable>
