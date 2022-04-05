@@ -41,10 +41,13 @@ const Application = (props: any) => {
                   </p>
                   <hr />
                   <p>
-                    <h2>Languages:</h2> Japanese, English, Kazakh
+                    <h2>Languages:</h2> Japanese 🇯🇵 English 🇺🇸 Kazakh 🇰🇿
                   </p>
                   <hr />
                   <h2>Links:</h2>
+                  <p>
+                    ETH Address: iotambat.eth
+                  </p>
                   <p>
                     Vienna Hypertext: 
                     <a href="https://vienna.earth/page/iotambat/Artists"> 🎨 </a>
@@ -54,13 +57,13 @@ const Application = (props: any) => {
                     <a href="mailto:devendra.tambat@outlook.com"> 📧 </a>
                   </p>
                   <p>
+                    Substack:
+                    <a href="https://substack.com/profile/4637122-devendra?utm_source=user-menu"> 📝</a>
+                  </p>
+                  <p>
                     Twitter: 
                     <a href="https://twitter.com/iotambat"> 🐦 </a>
                   </p>
-                  <p>
-                    ETH Address: iotambat.eth
-                  </p>
-            
                 </div>
               </div>
             </div>
